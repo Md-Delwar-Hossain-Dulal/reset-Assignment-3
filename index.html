@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--! ======================== Google Font ================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--! ======================== DaisyUi & Tailwain CSS CDN =================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--!========================== Font awsame CDN ==============================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- **========================= Custom colors & font =========================-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              customGreen: "rgb(171, 239, 95)",
+              customGreen50: "rgba(171, 239, 95, 0.5)",
+              customDark: "rgb(30, 30, 30)",
+              customPink: "rgb(231, 193, 211)",
+              customYellow: "rgb(239, 218, 110)",
+              customAqua: "rgb(164, 218, 195)",
+              customBlue: "rgb(119, 170, 234)",
+              customBackground: "rgb(253,253,253)",
+              textGray: "rgb(115, 115, 115)",
+              textDarkGray: "rgb(73, 73, 73)",
+              textDarkerGray: "rgb(33, 33, 33)",
+              textDarkestGray: "rgb(28, 28, 28)",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- TODO: Body start  -->
+  </head>
+  <body class="font-manrope bg-customBackground">
+    <header>
+      <nav>
+        <div class="navbar w-11/12 mx-auto">
+          <!-- !small -->
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-3xl font-bold">
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"
+              ></i>
+              Rinterio
+            </a>
+          </div>
+          <!-- ! Large -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg">
+              <li><a class="text-textDarkGray font-bold">Home</a></li>
+              <li><a class="text-textGray">Services</a></li>
+              <li><a class="text-textGray">Portfolio</a></li>
+              <li><a class="text-textGray">Blogs</a></li>
+              <li><a class="text-textGray">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="flex gap-5 px-8 hidden md:flex">
+              <button>
+                <i
+                  class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full"
+                ></i>
+              </button>
+              <button>
+                <i
+                  class="fa-solid fa-cart-shopping bg-white p-2 rounded-full"
+                ></i>
+              </button>
+            </div>
+            <a
+              class="btn bg-customGreen rounded-3xl px-6 font-bold text-xl bolt hidden md:inline-flex"
+            >
+              Book Consult
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 bg-black p-2 rounded-full text-white"
+              ></i>
+            </a>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg right-0"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- !================================ Banner section starts ================================== -->
+    <main>
+      <section>
+        <div
+          class="border-b-2 border-yellow-400 flex flex-col items-center w-11/12 mx-auto mt-12"
+        >
+          <div><img src="./assets/banner.png" alt="" /></div>
+          <div class="text-center">
+            <h1 class="text-3xl font-bold lg:text-7xl lg:font-extrabold">
+              A barn house of this design has a <br />
+              striking appearance
+            </h1>
+            <p class="mt-6 font-medium text-base">
+              A barn house of this design boasts a striking appearance with its
+              rustic charm, tall ceilings, and open floor plan, <br />
+              blending modern elegance with classic countryside appeal
+              beautifully.
+            </p>
+            <button
+              class="btn btn-ghost bg-customGreen50 mt-8 text-xl font-bold rounded-3xl pl-5"
+            >
+              View Details<i
+                class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- !cart -->
+      <section></section>
+    </main>
+  </body>
+</html>
