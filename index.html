@@ -253,27 +253,26 @@
             </h1>
             <p class="text-textDarkGray font-medium py-5">
               Explore our latest portfolio, showcasing innovative designs,
-              creative solutions, and successful <br />projects that highlight
+              creative solutions, and successful <br class="hidden lg:block" />projects that highlight
               our commitment to excellence.
             </p>
           </div>
         </div>
-        <!-- ! ================== parents grid =========================-->
-
-        <div class="w-10/12 mx-auto mt-16 grid grid-cols-12 grid-rows-12 gap-6">
-          <!--! child-1 -->
+        <!-- ! ================ for PC. parents grid (sm:hidden)  =================-->
+        <div class="w-10/12 mx-auto mt-16 lg:grid grid-cols-12 grid-rows-12 gap-6 hidden lg:visible">
+          <!--! Grid child-1 -->
           <div
             class="col-start-1 col-end-9 row-span-6 border-2 border-[#d1d1d1] bg-white rounded-2xl p-6 flex gap-6 pt-8">
             <div>
-              <img src="./assets/img1.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
+              <img src="./assets/img1.png" alt="" class=" border-2 border-[#d1d1d1] border-dashed" />
             </div>
             <div>
               <h3 class="text-2xl font-extrabold">Commercial</h3>
               <p class="text-textGray font-medium pt-3">
                 Discover our commercial services: tailored solutions for
-                businesses, <br />
+                businesses, <br class="hidden lg:block" />
                 enhancing productivity, efficiency, and growth with innovative
-                <br />
+                <br class="hidden lg:block" />
                 strategies and proven expertise.
               </p>
               <h3 class="text-xl font-extrabold pt-2">
@@ -282,16 +281,16 @@
               </h3>
             </div>
           </div>
-          <!--! child-2 -->
+          <!--! Grid child-2 -->
           <div
             class="col-start-9 col-end-13 row-span-6 border-2 border-[#d1d1d1] rounded-2xl p-6 flex justify-around bg-white">
             <img src="./assets/img2.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
           </div>
-          <!--!child-3-->
+          <!--! Grid child-3-->
           <div class="col-start-1 col-end-4 row-start-7 row-end-13 border-2 border-[#d1d1d1] rounded-2xl p-6 bg-white">
             <img src="./assets/img3.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
           </div>
-          <!-- !child-4 -->
+          <!-- ! Grid child-4 -->
           <div
             class="col-start-4 col-end-10 row-start-7 row-end-13 border-2 border-[#d1d1d1] rounded-2xl p-6 flex gap-6 bg-white">
             <div>
@@ -300,7 +299,7 @@
             <div>
               <h3 class="text-2xl font-extrabold">Commercial</h3>
               <p class="text-textGray font-medium pt-4">
-                Professional commercial solutions tailored <br />to elevate your
+                Professional commercial solutions tailored <br class="hidden lg:block" />to elevate your
                 brand's impact.
               </p>
               <h3 class="text-xl font-extrabold pt-4">
@@ -309,10 +308,66 @@
               </h3>
             </div>
           </div>
-          <!--! child-5 -->
+          <!--! Grid child-5 -->
           <div
             class="col-start-10 col-end-13 row-start-7 row-end-13 border-2 border-[#d1d1d1] rounded-2xl p-6 bg-white">
             <img src="./assets/img5.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
+          </div>
+        </div>
+        <!-- ! =================== use flex for small device ( lg:hidden ) =====================-->
+        <div class="flex flex-col gap-5 lg:hidden">
+          <!-- ! flex child-1 -->
+          <div class="p-6 flex flex-col items-center gap-6 border-2 border-[#d1d1d1] bg-white rounded-2xl  ">
+            <div>
+              <img src="./assets/img1.png" alt="" class="" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold">Commercial</h3>
+              <p class="text-textGray font-medium pt-3">
+                Discover our commercial services: tailored solutions for
+                businesses, <br class="hidden lg:block" />
+                enhancing productivity, efficiency, and growth with innovative
+                <br class="hidden lg:block" />
+                strategies and proven expertise.
+              </p>
+              <h3 class="text-xl font-extrabold pt-2">
+                View Details
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"></i>
+              </h3>
+            </div>
+          </div>
+          <!-- !flex child-2 -->
+          <div class="border-2 border-[#d1d1d1] rounded-2xl p-6 flex justify-around bg-white">
+            <img src="./assets/img2.png" alt="">
+          </div>
+          <!-- !flex child-3 -->
+          <div class="border-2 border-[#d1d1d1] rounded-2xl p-6 flex justify-around object-fill bg-white">
+            <img src="./assets/img5.png" alt="" class="object-fill">
+          </div>
+          <!-- ! flex child-4 -->
+          <div class="p-6 flex flex-col items-center gap-6 border-2 border-[#d1d1d1] bg-white rounded-2xl">
+            <div>
+              <img src="./assets/img4.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold">Commercial</h3>
+              <p class="text-textGray font-medium pt-4">
+                Professional commercial solutions tailored <br class="hidden lg:block" />to elevate your
+                brand's impact.
+              </p>
+              <h3 class="text-xl font-extrabold pt-4">
+                View Details
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"></i>
+              </h3>
+            </div>
+          </div>
+          <!-- ! flex child-5 -->
+          <div class="border-2 border-[#d1d1d1] rounded-2xl p-6 flex justify-around object-fill bg-white">
+            <img src="./assets/img3.png" alt="">
+          </div>
+          <!-- ! flex child-6 -->
+          <div class="border-2 border-[#d1d1d1] rounded-2xl p-6 flex justify-around object-fill bg-white">
+            <img src="./assets/img5.png" alt="">
           </div>
         </div>
     </section>
@@ -327,7 +382,7 @@
             objectives, and resource needs to ensure success.
           </p>
         </div>
-        <!-- !============================== hello ================== -->
+        <!-- !============================== from fill-up ================== -->
         <div class="items-center text-center pt-6 ">
           <div class="flex flex-col lg:flex-row gap-10 justify-center">
             <input type="text" placeholder="First Name*" class="input w-full max-w-sm rounded-3xl" />
@@ -343,7 +398,7 @@
                 placeholder="Write your message here"></textarea>
             </div>
             <button class="bg-customGreen pt-2 pb-2 px-24 lg:px-80 rounded-3xl my-7 ">Send Mail<i
-                class="fa-solid fa-arrow-right -rotate-45 bg-textDarkestGray text-white lg:ml-2 p-2 rounded-full"></i></button>
+                class="fa-solid fa-arrow-right -rotate-45 bg-textDarkestGray text-white ml-2 p-2 rounded-full"></i></button>
           </div>
         </div>
     </section>
@@ -366,7 +421,7 @@
         </p>
       </div>
       <div>
-        <ul class="text-white  flex lg:flex-row gap-2 lg:gap-24 justify-center  py-9">
+        <ul class="text-white  flex lg:flex-row gap-3 lg:gap-24 justify-center  py-9">
           <a href="#">
             <li>Home</li>
           </a>
