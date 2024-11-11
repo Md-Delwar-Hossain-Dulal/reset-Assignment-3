@@ -1,283 +1,320 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!--! ======================== Google Font ================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <!--! ======================== DaisyUi & Tailwain CSS CDN =================== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!--!========================== Font awsame CDN ==============================-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- **========================= Custom colors & font =========================-->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              customGreen: "rgb(171, 239, 95)",
-              customGreen50: "rgba(171, 239, 95, 0.5)",
-              customDark: "rgb(244 244 244)",
-              customPink: "rgb(231, 193, 211)",
-              customYellow: "rgb(239, 218, 110)",
-              customAqua: "rgb(164, 218, 195)",
-              customBlue: "rgb(119, 170, 234)",
-              customBackground: "rgb(253,253,253)",
-              textGray: "rgb(115, 115, 115)",
-              textDarkGray: "rgb(73, 73, 73)",
-              textDarkerGray: "rgb(33, 33, 33)",
-              textDarkestGray: "rgb(28, 28, 28)",
-            },
-            fontFamily: {
-              manrope: ["Manrope", "sans-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!--! ======================== Google Font ================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <!--! ======================== DaisyUi & Tailwind CSS CDN =================== -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--!========================== Font awsame CDN ==============================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- **========================= Custom colors & font =========================-->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            customGreen: "rgb(171, 239, 95)",
+            customGreen50: "rgba(171, 239, 95, 0.5)",
+            customDark: "rgb(244 244 244)",
+            customPink: "rgb(231, 193, 211)",
+            customYellow: "rgb(239, 218, 110)",
+            customAqua: "rgb(164, 218, 195)",
+            customBlue: "rgb(119, 170, 234)",
+            customBackground: "rgb(253,253,253)",
+            textGray: "rgb(115, 115, 115)",
+            textDarkGray: "rgb(73, 73, 73)",
+            textDarkerGray: "rgb(33, 33, 33)",
+            textDarkestGray: "rgb(28, 28, 28)",
+          },
+          fontFamily: {
+            manrope: ["Manrope", "sans-serif"],
           },
         },
-      };
-    </script>
-    <!-- TODO: Body start  -->
-  </head>
-  <body class="font-manrope bg-customBackground">
-    <header>
-      <nav>
-        <div class="navbar lg:w-10/12 mx-auto pt-14">
-          <!-- !small -->
-          <div class="navbar-start">
-            <a class="btn btn-ghost text-3xl font-bold">
-              <i
-                class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"
-              ></i>
-              Rinterio
-            </a>
-          </div>
-          <!-- ! Large -->
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-lg">
-              <li><a class="text-textDarkGray font-bold">Home</a></li>
-              <li><a class="text-textGray">Services</a></li>
-              <li><a class="text-textGray">Portfolio</a></li>
-              <li><a class="text-textGray">Blogs</a></li>
-              <li><a class="text-textGray">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <div class="flex gap-5 px-8 hidden md:flex">
-              <button>
-                <i
-                  class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full"
-                ></i>
-              </button>
-              <button>
-                <i
-                  class="fa-solid fa-cart-shopping bg-white p-2 rounded-full"
-                ></i>
-              </button>
-            </div>
-            <a
-              class="btn bg-customGreen rounded-3xl px-6 font-bold text-xl bolt hidden md:inline-flex"
-            >
-              Book Consult
-              <i
-                class="fa-solid fa-arrow-right -rotate-45 bg-black p-2 rounded-full text-white"
-              ></i>
-            </a>
+      },
+    };
+  </script>
+  <!-- TODO: Body start  -->
+</head>
 
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <i class="fa-solid fa-bars fa-2xl"></i>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg right-0"
-              >
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
+<body class="font-manrope bg-customBackground">
+  <header>
+    <nav>
+      <div class="navbar lg:w-10/12 mx-auto pt-14">
+        <!-- !small -->
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-3xl font-bold">
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"></i>
+            Rinterio
+          </a>
         </div>
-      </nav>
-    </header>
-    <!-- !================================ Banner section starts ======================= ===== -->
-    <main>
-      <section>
-        <div class="flex flex-col items-center w-10/12 mx-auto mt-12">
-          <div><img src="./assets/banner.png" alt="" /></div>
-          <div class="text-center">
-            <h1 class="text-5xl lg:text-7xl font-extrabold mt-6">
-              A barn house of this design has a <br class="hidden lg:block" />
-              striking appearance
-            </h1>
-            <p class="mt-7 font-medium text-base">
-              A barn house of this design boasts a striking appearance with its
-              rustic charm, tall ceilings, and open floor plan,
-              <br class="hidden lg:block" />
-              blending modern elegance with classic countryside appeal
-              beautifully.
-            </p>
-            <button
-              class="btn btn-ghost bg-customGreen50 mt-8 text-xl font-bold rounded-3xl pl-5"
-            >
-              View Details<i
-                class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"
-              ></i>
+        <!-- ! Large -->
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg">
+            <li><a class="text-textDarkGray font-bold">Home</a></li>
+            <li><a class="text-textGray">Services</a></li>
+            <li><a class="text-textGray">Portfolio</a></li>
+            <li><a class="text-textGray">Blogs</a></li>
+            <li><a class="text-textGray">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex gap-5 px-8 hidden md:flex">
+            <button>
+              <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full"></i>
             </button>
           </div>
+          <a class="btn bg-customGreen rounded-3xl px-6 font-bold text-xl bolt hidden md:inline-flex">
+            Book Consult
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-black p-2 rounded-full text-white"></i>
+          </a>
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg right-0">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
         </div>
-      </section>
-      <!-- !=============================== We design thoughtful============================== -->
-      <section class="bg-customDark mb-14">
-        <div
-          class="w-10/12 mx-auto mt-20 py-10 lg:py-24 lg:flex gap-11 lg:justify-between relative"
-        >
+      </div>
+    </nav>
+  </header>
+  <!-- !================================ Banner section starts ======================= ===== -->
+  <main>
+    <section>
+      <div class="flex flex-col items-center w-10/12 mx-auto mt-12">
+        <div><img src="./assets/banner.png" alt="" /></div>
+        <div class="text-center">
+          <h1 class="text-5xl lg:text-7xl font-extrabold mt-6">
+            A barn house of this design has a <br class="hidden lg:block" />
+            striking appearance
+          </h1>
+          <p class="mt-7 font-medium text-base">
+            A barn house of this design boasts a striking appearance with its
+            rustic charm, tall ceilings, and open floor plan,
+            <br class="hidden lg:block" />
+            blending modern elegance with classic countryside appeal
+            beautifully.
+          </p>
+          <button class="btn btn-ghost bg-customGreen50 mt-8 text-xl font-bold rounded-3xl pl-5">
+            View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- !=============================== We design thoughtful ============================== -->
+    <section class="bg-customDark mb-4">
+      <div class="w-10/12 mx-auto mt-20 py-10 lg:py-24 lg:flex gap-11 lg:justify-between relative">
+        <div>
           <div>
+            <div class="absolute h-20 pt-4 border-2 border-[#d1d1d1] border-dashed -left-16 top-6 hidden lg:block">
+              <img src="./assets/Vector.png" alt="" />
+            </div>
+            <button class="bg-white p-2 rounded-full text-textDarkGray">
+              <i class="fa-solid fa-arrow-right pr-2"></i>About Us
+            </button>
+            <h1 class="text-3xl lg:text-5xl font-extrabold leading-tight pt-4">
+              We design thoughtful, <br class="hidden lg:block" />
+              liveable spaces
+            </h1>
+            <p class="font-medium text-textDarkGray my-6">
+              We design spaces that are both stylish and comfortable, creating
+              inviting, <br class="hidden lg:block" />
+              practical places that truly feel like home.
+            </p>
+          </div>
+          <div class="bg-white pl-5 pr-8 py-7 flex rounded-xl gap-10">
             <div>
-              <div
-                class="absolute h-20 pt-4 border-2 border-[#d1d1d1] border-dashed -left-16 top-6 hidden lg:block"
-              >
-                <img src="./assets/Vector.png" alt="" />
-              </div>
-              <button class="bg-white p-2 rounded-full text-textDarkGray">
-                <i class="fa-solid fa-arrow-right pr-2"></i>About Us
-              </button>
-              <h1
-                class="text-3xl lg:text-5xl font-extrabold leading-tight pt-4"
-              >
-                We design thoughtful, <br class="hidden lg:block" />
-                liveable spaces
-              </h1>
-              <p class="font-medium text-textDarkGray my-6">
-                We design spaces that are both stylish and comfortable, creating
-                inviting, <br class="hidden lg:block" />
-                practical places that truly feel like home.
+              <img src="./assets/commercial.png" alt="" />
+            </div>
+            <div>
+              <h2 class="textDarkGray text-xl font-extrabold">Commercial</h2>
+              <p class="text-textGray font-medium pt-2">
+                We create functional, stylish commercial spaces <br />
+                that enhance productivity and appeal.
               </p>
             </div>
-            <div class="bg-white pl-5 pr-8 py-7 flex rounded-xl gap-10">
-              <div>
-                <img src="./assets/commercial.png" alt="" />
-              </div>
-              <div>
-                <h2 class="textDarkGray text-xl font-extrabold">Commercial</h2>
-                <p class="text-textGray font-medium pt-2">
-                  We create functional, stylish commercial spaces <br />
-                  that enhance productivity and appeal.
-                </p>
-              </div>
-            </div>
-            <div class="mt-6 bg-white pl-5 pr-8 py-7 flex rounded-xl gap-10">
-              <div>
-                <img src="./assets/residential.png" alt="" />
-              </div>
-              <div>
-                <h2 class="textDarkGray text-xl font-extrabold">Residential</h2>
-                <p class="text-textGray font-medium pt-2">
-                  We design inviting, practical residential spaces <br />
-                  that blend comfort with style.
-                </p>
-              </div>
-            </div>
           </div>
-          <div>
-            <img
-              src="./assets/Rectangle.png"
-              alt=""
-              class="w-full h-full pt-6"
-            />
+          <div class="mt-6 bg-white pl-5 pr-8 py-7 flex rounded-xl gap-10">
+            <div>
+              <img src="./assets/residential.png" alt="" />
+            </div>
+            <div>
+              <h2 class="textDarkGray text-xl font-extrabold">Residential</h2>
+              <p class="text-textGray font-medium pt-2">
+                We design inviting, practical residential spaces <br />
+                that blend comfort with style.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- !=============================== Our Works Process================================= -->
-        <div class="w-10/12 mx-auto text-center">
-          <button
-            class="bg-white p-2 rounded-full text-textDarkGray px-4 font-bold"
-          >
-            <i class="fa-solid fa-arrow-right pr-2"></i>How we works
-          </button>
-          <h1
-            class="text-3xl lg:text-5xl font-extrabold pt-6 text-textDarkerGray"
-          >
-            Our Works Process
+        <div>
+          <img src="./assets/Rectangle.png" alt="" class="w-full h-full pt-6" />
+        </div>
+      </div>
+      <!-- !=============================== Our Works Process================================= -->
+      <div class="w-10/12 mx-auto text-center">
+        <button class="bg-white p-2 rounded-full text-textDarkGray px-4 font-bold">
+          <i class="fa-solid fa-arrow-right pr-2"></i>How we works
+        </button>
+        <h1 class="text-3xl lg:text-5xl font-extrabold pt-6 text-textDarkerGray">
+          Our Works Process
+        </h1>
+        <p class="font-medium text-textDarkGray py-7">
+          Our work process involves careful planning, creative design,
+          collaboration, <br />
+          and continuous refinement to deliver exceptional results.
+        </p>
+      </div>
+      <!-- !==== color box ===== -->
+      <div class="flex flex-wrap gap-6 w-10/12 mx-auto pb-10 lg:pb-20 justify-around lg:justify-between">
+        <div class="bg-customPink rounded-xl w-72 h-56 p-6">
+          <div>
+            <img src="./assets/concept.png" alt="" />
+          </div>
+          <h1 class="font-extrabold text-xl text-textDarkestGray pt-3">
+            Concept
           </h1>
-          <p class="font-medium text-textDarkGray py-7">
-            Our work process involves careful planning, creative design,
-            collaboration, <br />
-            and continuous refinement to deliver exceptional results.
+          <p class="text-textDarkGray font-medium py-2 text-wrap">
+            A concept is a foundational <br />
+            idea that guides the vision, <br />design, and execution.
           </p>
         </div>
-        <!-- !==== color box ===== -->
-        <div
-          class="flex flex-wrap gap-6 w-10/12 mx-auto pb-20 justify-around lg:justify-between"
-        >
-          <div class="bg-customPink rounded-xl w-72 h-56 p-6">
-            <div>
-              <img src="./assets/concept.png" alt="" />
-            </div>
-            <h1 class="font-extrabold text-xl text-textDarkestGray pt-3">
-              Concept
-            </h1>
-            <p class="text-textDarkGray font-medium py-2 text-wrap">
-              A concept is a foundational <br />
-              idea that guides the vision, <br />design, and execution of a
-              project.
-            </p>
+        <div class="bg-customYellow rounded-xl w-72 h-56 p-6">
+          <div>
+            <img src="./assets/flow-chart.png" alt="" />
           </div>
-          <div class="bg-customYellow rounded-xl w-72 h-56 p-6">
-            <div>
-              <img src="./assets/flow-chart.png" alt="" />
-            </div>
-            <h1 class="font-extrabold text-xl text-textDarkestGray pt-3">
-              Design Process
-            </h1>
-            <p class="text-textDarkGray font-medium pt-2 text-wrap">
-              The design process involves research, ideation, iteration, and
-              refinement to create functional.
-            </p>
+          <h1 class="font-extrabold text-xl text-textDarkestGray pt-3">
+            Design Process
+          </h1>
+          <p class="text-textDarkGray font-medium pt-2 text-wrap">
+            The design process involves research, ideation, iteration, and
+            refinement to create.
+          </p>
+        </div>
+        <div class="bg-customAqua rounded-xl w-72 h-56 p-6">
+          <div>
+            <img src="./assets/vision.png" alt="" />
           </div>
-          <div class="bg-customAqua rounded-xl w-72 h-56 p-6">
-            <div>
-              <img src="./assets/vision.png" alt="" />
-            </div>
-            <h1 class="font-extrabold text-xl text-textDarkestGray pt-3">
-              Supervision
-            </h1>
-            <p class="text-textDarkGray font-medium pt-2 text-wrap">
-              Supervision oversees progress, ensures quality, manages resources,
-              and maintains standards .
-            </p>
+          <h1 class="font-extrabold text-xl text-textDarkestGray pt-3">
+            Supervision
+          </h1>
+          <p class="text-textDarkGray font-medium pt-2 text-wrap">
+            Supervision oversees progress, ensures quality, manages resources,
+            and maintains .
+          </p>
+        </div>
+        <div class="bg-customBlue rounded-xl w-72 h-56 p-6">
+          <div>
+            <img src="./assets/budget-planning.png" alt="" />
           </div>
-          <div class="bg-customBlue rounded-xl w-72 h-56 p-6">
-            <div>
-              <img src="./assets/budget-planning.png" alt="" />
-            </div>
-            <h1 class="font-extrabold text-xl text-textDarkestGray pt-3">
-              Budget Planning
+          <h1 class="font-extrabold text-xl text-textDarkestGray pt-3">
+            Budget Planning
+          </h1>
+          <p class="text-textDarkGray font-medium pt-2 text-wrap">
+            Budget planning ensures financial control, allocates resources
+            efficiently.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ! ============================== Our Latest Portfolio ============================== -->
+    <section class="w-9/12 mx-auto mb-14">
+      <div>
+        <div>
+          <div class="text-center">
+            <button class="bg-customGreen50 p-1 rounded-full px-3 mt-5 font-bold">
+              <i class="fa-solid fa-arrow-right pr-1"></i>Explore our Latest
+              works
+            </button>
+            <h1 class="text-3xl lg:text-5xl font-extrabold pt-6 text-textDarkerGray">
+              Our Latest Portfolio
             </h1>
-            <p class="text-textDarkGray font-medium pt-2 text-wrap">
-              Budget planning ensures financial control, allocates resources
-              efficiently.
+            <p class="text-textDarkGray font-medium py-5">
+              Explore our latest portfolio, showcasing innovative designs,
+              creative solutions, and successful <br />projects that highlight
+              our commitment to excellence.
             </p>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+        <!-- ! ================== parents grid =========================-->
+
+        <div class="w-10/12 mx-auto mt-16 grid grid-cols-12 grid-rows-12 gap-6">
+          <!--! child-1 -->
+          <div
+            class="col-start-1 col-end-9 row-span-6 border-2 border-[#d1d1d1] bg-white rounded-2xl p-6 flex gap-6 pt-8">
+            <div>
+              <img src="./assets/img1.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold">Commercial</h3>
+              <p class="text-textGray font-medium pt-3">
+                Discover our commercial services: tailored solutions for
+                businesses, <br />
+                enhancing productivity, efficiency, and growth with innovative
+                <br />
+                strategies and proven expertise.
+              </p>
+              <h3 class="text-xl font-extrabold pt-2">
+                View Details
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"></i>
+              </h3>
+            </div>
+          </div>
+          <!--! child-2 -->
+          <div
+            class="col-start-9 col-end-13 row-span-6 border-2 border-[#d1d1d1] rounded-2xl p-6 flex justify-around bg-white">
+            <img src="./assets/img2.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
+          </div>
+          <!--!child-3-->
+          <div class="col-start-1 col-end-4 row-start-7 row-end-13 border-2 border-[#d1d1d1] rounded-2xl p-6 bg-white">
+            <img src="./assets/img3.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
+          </div>
+          <!-- !child-4 -->
+          <div
+            class="col-start-4 col-end-10 row-start-7 row-end-13 border-2 border-[#d1d1d1] rounded-2xl p-6 flex gap-6 bg-white">
+            <div>
+              <img src="./assets/img4.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold">Commercial</h3>
+              <p class="text-textGray font-medium pt-4">
+                Professional commercial solutions tailored <br />to elevate your
+                brand's impact.
+              </p>
+              <h3 class="text-xl font-extrabold pt-4">
+                View Details
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"></i>
+              </h3>
+            </div>
+          </div>
+          <!--! child-5 -->
+          <div
+            class="col-start-10 col-end-13 row-start-7 row-end-13 border-2 border-[#d1d1d1] rounded-2xl p-6 bg-white">
+            <img src="./assets/img5.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
+          </div>
+        </div>
+        <!-- !+++++++++++++++++++++++++++++++++++++++ +++++++++ ++ + +++++++++++ ++++++++++++++++++ ++++ -->
+    </section>
+  </main>
+</body>
+
 </html>
