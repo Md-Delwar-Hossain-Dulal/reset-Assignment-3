@@ -45,21 +45,21 @@
       },
     };
   </script>
-  <!-- TODO: Body start  -->
 </head>
 
 <body class="font-manrope bg-customBackground">
   <header>
+    <!-- ! ========================= Nav ======================== -->
     <nav>
-      <div class="navbar lg:w-10/12 mx-auto pt-14">
-        <!-- ! nav small -->
+      <div class="navbar lg:w-10/12 mx-auto pt-5 lg:pt-14">
+        <!-- ! nav small device-->
         <div class="navbar-start">
           <a class="btn btn-ghost text-3xl font-bold">
             <i class="fa-solid fa-arrow-right -rotate-45 bg-customGreen p-2 rounded-full"></i>
             Rinterio
           </a>
         </div>
-        <!-- !  nav Large -->
+        <!-- !  nav Large device-->
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-lg">
             <li><a class="text-textDarkGray font-bold">Home</a></li>
@@ -69,6 +69,7 @@
             <li><a class="text-textGray">Contact Us</a></li>
           </ul>
         </div>
+        <!-- Nav end + menu -->
         <div class="navbar-end">
           <div class="flex gap-5 pr-8 hidden md:flex">
             <button>
@@ -173,7 +174,7 @@
           <img src="./assets/Rectangle.png" alt="" class="w-full h-full pt-6" />
         </div>
       </div>
-      <!-- !=============================== Our Works Process================================= -->
+      <!-- !=============================== Our Works Process ================================= -->
       <div class="w-10/12 mx-auto text-center">
         <button class="bg-white p-2 rounded-full text-textDarkGray px-4 font-bold">
           <i class="fa-solid fa-arrow-right pr-2"></i>How we works
@@ -258,7 +259,7 @@
             </p>
           </div>
         </div>
-        <!-- ! ================ for PC. parents grid (sm:hidden)  =================-->
+        <!-- ! ====== for PC. parents grid (sm:hidden)  =====-->
         <div class="w-10/12 mx-auto mt-16 lg:grid grid-cols-12 grid-rows-12 gap-6 hidden lg:visible">
           <!--! Grid child-1 -->
           <div
@@ -314,7 +315,7 @@
             <img src="./assets/img5.png" alt="" class="border-2 border-[#d1d1d1] border-dashed" />
           </div>
         </div>
-        <!-- ! =================== use flex for small device ( lg:hidden ) =====================-->
+        <!-- ! ======= use flex for small device ( lg:hidden )======-->
         <div class="flex flex-col gap-5 lg:hidden">
           <!-- ! flex child-1 -->
           <div class="p-6 flex flex-col items-center gap-6 border-2 border-[#d1d1d1] bg-white rounded-2xl  ">
@@ -382,25 +383,26 @@
             objectives, and resource needs to ensure success.
           </p>
         </div>
-        <!-- !============================== from fill-up ================== -->
-        <div class="items-center text-center pt-6 ">
-          <div class="flex flex-col lg:flex-row gap-10 justify-center">
+        <!-- !============ from fill-up =============== -->
+        <div class="items-center text-center pt-6">
+          <div class="flex flex-col lg:flex-row  justify-center gap-7 lg:gap-10">
             <input type="text" placeholder="First Name*" class="input w-full max-w-sm rounded-3xl" />
             <input type="text" placeholder="Last Name*" class="input w-full max-w-sm rounded-3xl" />
           </div>
           <div>
-            <div class="mt-6 flex flex-col lg:flex-row justify-center gap-10">
+            <div class="mt-6 flex flex-col lg:flex-row justify-center gap-7 lg:gap-10">
               <input type="text" placeholder="Phone Number*" class="input w-full max-w-sm rounded-3xl" />
               <input type="email" placeholder="Email Number*" class="input w-full max-w-sm rounded-3xl" />
             </div>
             <div>
-              <textarea class="textarea textarea-bordered mt-7 h-32 w-full  lg:h-52  lg:w-6/12 rounded-3xl"
-                placeholder="Write your message here"></textarea>
+              <div class="flex flex-col lg:flex-row  justify-center ">
+                <textarea class="textarea textarea-bordered mt-7 h-60 w-full lg:h-52  lg:w-3/6 rounded-3xl"
+                  placeholder="Write your message here"></textarea>
+              </div>
+              <button class="bg-customGreen pt-2 pb-2 px-24 lg:px-80 rounded-3xl my-7 ">Send Mail<i
+                  class="fa-solid fa-arrow-right -rotate-45 bg-textDarkestGray text-white ml-2 p-2 rounded-full"></i></button>
             </div>
-            <button class="bg-customGreen pt-2 pb-2 px-24 lg:px-80 rounded-3xl my-7 ">Send Mail<i
-                class="fa-solid fa-arrow-right -rotate-45 bg-textDarkestGray text-white ml-2 p-2 rounded-full"></i></button>
           </div>
-        </div>
     </section>
   </main>
   <!-- ! ================================ Footer ====================================-->
